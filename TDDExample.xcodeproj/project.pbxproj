@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7804EEB923C7660C00E0317D /* FileLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804EEB823C7660C00E0317D /* FileLoaderTests.swift */; };
 		783EC2DF23C7494F00176230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC2DE23C7494F00176230 /* AppDelegate.swift */; };
 		783EC2E123C7494F00176230 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC2E023C7494F00176230 /* SceneDelegate.swift */; };
 		783EC2E323C7494F00176230 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC2E223C7494F00176230 /* ContentView.swift */; };
@@ -15,6 +16,13 @@
 		783EC2EB23C7495100176230 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 783EC2E923C7495100176230 /* LaunchScreen.storyboard */; };
 		783EC2F623C7495100176230 /* TDDExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC2F523C7495100176230 /* TDDExampleTests.swift */; };
 		783EC30123C7495100176230 /* TDDExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC30023C7495100176230 /* TDDExampleUITests.swift */; };
+		783EC30F23C7496400176230 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC30E23C7496400176230 /* FileLoader.swift */; };
+		783EC31123C7508000176230 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31023C7508000176230 /* Cache.swift */; };
+		783EC31723C758A900176230 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31623C758A900176230 /* QuizModel.swift */; };
+		783EC31A23C758CC00176230 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31923C758CC00176230 /* CourseModel.swift */; };
+		783EC31D23C758E800176230 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31C23C758E800176230 /* QuestionModel.swift */; };
+		78AE9AC623C772AF00DE6721 /* QuizTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 78AE9AC523C772AF00DE6721 /* QuizTest.json */; };
+		78AE9AC723C772AF00DE6721 /* QuizTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 78AE9AC523C772AF00DE6721 /* QuizTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,9 +40,17 @@
 			remoteGlobalIDString = 783EC2DA23C7494F00176230;
 			remoteInfo = TDDExample;
 		};
+		783EC32723C7644600176230 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 783EC2D323C7494F00176230 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 783EC2DA23C7494F00176230;
+			remoteInfo = TDDExample;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7804EEB823C7660C00E0317D /* FileLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoaderTests.swift; sourceTree = "<group>"; };
 		783EC2DB23C7494F00176230 /* TDDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		783EC2DE23C7494F00176230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		783EC2E023C7494F00176230 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,13 @@
 		783EC2FC23C7495100176230 /* TDDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		783EC30023C7495100176230 /* TDDExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDExampleUITests.swift; sourceTree = "<group>"; };
 		783EC30223C7495100176230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		783EC30E23C7496400176230 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
+		783EC31023C7508000176230 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		783EC31623C758A900176230 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		783EC31923C758CC00176230 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		783EC31C23C758E800176230 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		783EC32223C7644600176230 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78AE9AC523C772AF00DE6721 /* QuizTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuizTest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +90,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		783EC2F923C7495100176230 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EC31F23C7644600176230 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,6 +122,7 @@
 				783EC2DB23C7494F00176230 /* TDDExample.app */,
 				783EC2F123C7495100176230 /* TDDExampleTests.xctest */,
 				783EC2FC23C7495100176230 /* TDDExampleUITests.xctest */,
+				783EC32223C7644600176230 /* .xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +130,7 @@
 		783EC2DD23C7494F00176230 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				783EC31423C7588300176230 /* Model */,
 				783EC2DE23C7494F00176230 /* AppDelegate.swift */,
 				783EC2E023C7494F00176230 /* SceneDelegate.swift */,
 				783EC2E223C7494F00176230 /* ContentView.swift */,
@@ -106,6 +138,9 @@
 				783EC2E923C7495100176230 /* LaunchScreen.storyboard */,
 				783EC2EC23C7495100176230 /* Info.plist */,
 				783EC2E623C7495100176230 /* Preview Content */,
+				783EC30E23C7496400176230 /* FileLoader.swift */,
+				78AE9AC523C772AF00DE6721 /* QuizTest.json */,
+				783EC31023C7508000176230 /* Cache.swift */,
 			);
 			path = TDDExample;
 			sourceTree = "<group>";
@@ -121,6 +156,7 @@
 		783EC2F423C7495100176230 /* TDDExampleTests */ = {
 			isa = PBXGroup;
 			children = (
+				7804EEB823C7660C00E0317D /* FileLoaderTests.swift */,
 				783EC2F523C7495100176230 /* TDDExampleTests.swift */,
 				783EC2F723C7495100176230 /* Info.plist */,
 			);
@@ -134,6 +170,40 @@
 				783EC30223C7495100176230 /* Info.plist */,
 			);
 			path = TDDExampleUITests;
+			sourceTree = "<group>";
+		};
+		783EC31423C7588300176230 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				783EC31523C7589B00176230 /* Quiz */,
+				783EC31823C758BF00176230 /* Course */,
+				783EC31B23C758DA00176230 /* Question */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		783EC31523C7589B00176230 /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				783EC31623C758A900176230 /* QuizModel.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
+		783EC31823C758BF00176230 /* Course */ = {
+			isa = PBXGroup;
+			children = (
+				783EC31923C758CC00176230 /* CourseModel.swift */,
+			);
+			path = Course;
+			sourceTree = "<group>";
+		};
+		783EC31B23C758DA00176230 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				783EC31C23C758E800176230 /* QuestionModel.swift */,
+			);
+			path = Question;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +262,24 @@
 			productReference = 783EC2FC23C7495100176230 /* TDDExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		783EC32123C7644600176230 /* FileLoaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 783EC32923C7644600176230 /* Build configuration list for PBXNativeTarget "FileLoaderTests" */;
+			buildPhases = (
+				783EC31E23C7644600176230 /* Sources */,
+				783EC31F23C7644600176230 /* Frameworks */,
+				783EC32023C7644600176230 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783EC32823C7644600176230 /* PBXTargetDependency */,
+			);
+			name = FileLoaderTests;
+			productName = FileLoaderTests;
+			productReference = 783EC32223C7644600176230 /* .xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +301,10 @@
 						CreatedOnToolsVersion = 11.3;
 						TestTargetID = 783EC2DA23C7494F00176230;
 					};
+					783EC32123C7644600176230 = {
+						CreatedOnToolsVersion = 11.3;
+						TestTargetID = 783EC2DA23C7494F00176230;
+					};
 				};
 			};
 			buildConfigurationList = 783EC2D623C7494F00176230 /* Build configuration list for PBXProject "TDDExample" */;
@@ -231,6 +323,7 @@
 				783EC2DA23C7494F00176230 /* TDDExample */,
 				783EC2F023C7495100176230 /* TDDExampleTests */,
 				783EC2FB23C7495100176230 /* TDDExampleUITests */,
+				783EC32123C7644600176230 /* FileLoaderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +336,7 @@
 				783EC2EB23C7495100176230 /* LaunchScreen.storyboard in Resources */,
 				783EC2E823C7495100176230 /* Preview Assets.xcassets in Resources */,
 				783EC2E523C7495100176230 /* Assets.xcassets in Resources */,
+				78AE9AC623C772AF00DE6721 /* QuizTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,10 +344,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AE9AC723C772AF00DE6721 /* QuizTest.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		783EC2FA23C7495100176230 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EC32023C7644600176230 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -268,8 +370,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				783EC2DF23C7494F00176230 /* AppDelegate.swift in Sources */,
+				783EC31123C7508000176230 /* Cache.swift in Sources */,
 				783EC2E123C7494F00176230 /* SceneDelegate.swift in Sources */,
+				783EC30F23C7496400176230 /* FileLoader.swift in Sources */,
+				783EC31723C758A900176230 /* QuizModel.swift in Sources */,
 				783EC2E323C7494F00176230 /* ContentView.swift in Sources */,
+				783EC31A23C758CC00176230 /* CourseModel.swift in Sources */,
+				783EC31D23C758E800176230 /* QuestionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7804EEB923C7660C00E0317D /* FileLoaderTests.swift in Sources */,
 				783EC2F623C7495100176230 /* TDDExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +394,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				783EC30123C7495100176230 /* TDDExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		783EC31E23C7644600176230 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +416,11 @@
 			isa = PBXTargetDependency;
 			target = 783EC2DA23C7494F00176230 /* TDDExample */;
 			targetProxy = 783EC2FD23C7495100176230 /* PBXContainerItemProxy */;
+		};
+		783EC32823C7644600176230 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 783EC2DA23C7494F00176230 /* TDDExample */;
+			targetProxy = 783EC32723C7644600176230 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,6 +674,45 @@
 			};
 			name = Release;
 		};
+		783EC32A23C7644600176230 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKU8459YDL;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDExample.app/TDDExample";
+			};
+			name = Debug;
+		};
+		783EC32B23C7644600176230 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LKU8459YDL;
+				INFOPLIST_FILE = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TDDExample.app/TDDExample";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -589,6 +748,15 @@
 			buildConfigurations = (
 				783EC30C23C7495100176230 /* Debug */,
 				783EC30D23C7495100176230 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		783EC32923C7644600176230 /* Build configuration list for PBXNativeTarget "FileLoaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				783EC32A23C7644600176230 /* Debug */,
+				783EC32B23C7644600176230 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
