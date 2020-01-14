@@ -18,9 +18,13 @@
 		783EC30123C7495100176230 /* TDDExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC30023C7495100176230 /* TDDExampleUITests.swift */; };
 		783EC30F23C7496400176230 /* FileLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC30E23C7496400176230 /* FileLoader.swift */; };
 		783EC31123C7508000176230 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31023C7508000176230 /* Cache.swift */; };
-		783EC31723C758A900176230 /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31623C758A900176230 /* QuizModel.swift */; };
-		783EC31A23C758CC00176230 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31923C758CC00176230 /* CourseModel.swift */; };
-		783EC31D23C758E800176230 /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783EC31C23C758E800176230 /* QuestionModel.swift */; };
+		785AB15623CDB6E700975FDA /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB15523CDB6E700975FDA /* QuizView.swift */; };
+		785AB15823CDB6FA00975FDA /* QuizViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB15723CDB6FA00975FDA /* QuizViewVM.swift */; };
+		785AB15A23CDB72E00975FDA /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB15923CDB72E00975FDA /* QuizModel.swift */; };
+		785AB15C23CDB77200975FDA /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB15B23CDB77200975FDA /* CourseModel.swift */; };
+		785AB15F23CDB7B000975FDA /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB15E23CDB7B000975FDA /* QuestionModel.swift */; };
+		785AB16123CDBD8400975FDA /* CourseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB16023CDBD8400975FDA /* CourseRow.swift */; };
+		785AB16323CDC75D00975FDA /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785AB16223CDC75D00975FDA /* CourseView.swift */; };
 		78AE9AC623C772AF00DE6721 /* QuizTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 78AE9AC523C772AF00DE6721 /* QuizTest.json */; };
 		78AE9AC723C772AF00DE6721 /* QuizTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 78AE9AC523C772AF00DE6721 /* QuizTest.json */; };
 /* End PBXBuildFile section */
@@ -67,10 +71,14 @@
 		783EC30223C7495100176230 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		783EC30E23C7496400176230 /* FileLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoader.swift; sourceTree = "<group>"; };
 		783EC31023C7508000176230 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
-		783EC31623C758A900176230 /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
-		783EC31923C758CC00176230 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
-		783EC31C23C758E800176230 /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
 		783EC32223C7644600176230 /* .xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = .xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		785AB15523CDB6E700975FDA /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		785AB15723CDB6FA00975FDA /* QuizViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewVM.swift; sourceTree = "<group>"; };
+		785AB15923CDB72E00975FDA /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		785AB15B23CDB77200975FDA /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		785AB15E23CDB7B000975FDA /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		785AB16023CDBD8400975FDA /* CourseRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRow.swift; sourceTree = "<group>"; };
+		785AB16223CDC75D00975FDA /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		78AE9AC523C772AF00DE6721 /* QuizTest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = QuizTest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -130,7 +138,10 @@
 		783EC2DD23C7494F00176230 /* TDDExample */ = {
 			isa = PBXGroup;
 			children = (
+				785AB14923CDA75600975FDA /* Views */,
+				785AB14A23CDA76000975FDA /* Extensions */,
 				783EC31423C7588300176230 /* Model */,
+				785AB14823CDA71500975FDA /* Network */,
 				783EC2DE23C7494F00176230 /* AppDelegate.swift */,
 				783EC2E023C7494F00176230 /* SceneDelegate.swift */,
 				783EC2E223C7494F00176230 /* ContentView.swift */,
@@ -138,9 +149,7 @@
 				783EC2E923C7495100176230 /* LaunchScreen.storyboard */,
 				783EC2EC23C7495100176230 /* Info.plist */,
 				783EC2E623C7495100176230 /* Preview Content */,
-				783EC30E23C7496400176230 /* FileLoader.swift */,
 				78AE9AC523C772AF00DE6721 /* QuizTest.json */,
-				783EC31023C7508000176230 /* Cache.swift */,
 			);
 			path = TDDExample;
 			sourceTree = "<group>";
@@ -175,33 +184,60 @@
 		783EC31423C7588300176230 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				783EC31523C7589B00176230 /* Quiz */,
-				783EC31823C758BF00176230 /* Course */,
-				783EC31B23C758DA00176230 /* Question */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		783EC31523C7589B00176230 /* Quiz */ = {
+		785AB14823CDA71500975FDA /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				783EC31623C758A900176230 /* QuizModel.swift */,
+				783EC30E23C7496400176230 /* FileLoader.swift */,
+				783EC31023C7508000176230 /* Cache.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		785AB14923CDA75600975FDA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				785AB15123CDB69D00975FDA /* Quiz */,
+				785AB15223CDB6AA00975FDA /* Courses */,
+				785AB15D23CDB78B00975FDA /* Question */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		785AB14A23CDA76000975FDA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		785AB15123CDB69D00975FDA /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				785AB15523CDB6E700975FDA /* QuizView.swift */,
+				785AB15723CDB6FA00975FDA /* QuizViewVM.swift */,
+				785AB15923CDB72E00975FDA /* QuizModel.swift */,
+				785AB16023CDBD8400975FDA /* CourseRow.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
 		};
-		783EC31823C758BF00176230 /* Course */ = {
+		785AB15223CDB6AA00975FDA /* Courses */ = {
 			isa = PBXGroup;
 			children = (
-				783EC31923C758CC00176230 /* CourseModel.swift */,
+				785AB15B23CDB77200975FDA /* CourseModel.swift */,
+				785AB16223CDC75D00975FDA /* CourseView.swift */,
 			);
-			path = Course;
+			path = Courses;
 			sourceTree = "<group>";
 		};
-		783EC31B23C758DA00176230 /* Question */ = {
+		785AB15D23CDB78B00975FDA /* Question */ = {
 			isa = PBXGroup;
 			children = (
-				783EC31C23C758E800176230 /* QuestionModel.swift */,
+				785AB15E23CDB7B000975FDA /* QuestionModel.swift */,
 			);
 			path = Question;
 			sourceTree = "<group>";
@@ -369,14 +405,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				785AB15C23CDB77200975FDA /* CourseModel.swift in Sources */,
 				783EC2DF23C7494F00176230 /* AppDelegate.swift in Sources */,
 				783EC31123C7508000176230 /* Cache.swift in Sources */,
+				785AB15623CDB6E700975FDA /* QuizView.swift in Sources */,
 				783EC2E123C7494F00176230 /* SceneDelegate.swift in Sources */,
 				783EC30F23C7496400176230 /* FileLoader.swift in Sources */,
-				783EC31723C758A900176230 /* QuizModel.swift in Sources */,
+				785AB15823CDB6FA00975FDA /* QuizViewVM.swift in Sources */,
+				785AB16123CDBD8400975FDA /* CourseRow.swift in Sources */,
+				785AB15A23CDB72E00975FDA /* QuizModel.swift in Sources */,
 				783EC2E323C7494F00176230 /* ContentView.swift in Sources */,
-				783EC31A23C758CC00176230 /* CourseModel.swift in Sources */,
-				783EC31D23C758E800176230 /* QuestionModel.swift in Sources */,
+				785AB15F23CDB7B000975FDA /* QuestionModel.swift in Sources */,
+				785AB16323CDC75D00975FDA /* CourseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

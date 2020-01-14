@@ -4,7 +4,7 @@
         "courseName": "sport",
         "questions": [{
             "question": "Which one is correct team name in NBA?",
-            "questionNumber": 1,
+            "id": 1,
             "options": [
                 "New York Bulls",
                 "Los Angeles Kings",
@@ -17,7 +17,7 @@
     {
         "courseName": "math",
         "questions": [{
-            "questionNumber": 1,
+            "id": 1,
             "question": "5 + 7 = ?",
             "options": [
                 "10",
@@ -28,7 +28,7 @@
             "answer": "12"
         },
         {
-            "questionNumber": 2,
+            "id": 2,
             "question": "12 - 8 = ?",
             "options": [
                 "1",
