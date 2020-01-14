@@ -19,7 +19,7 @@ struct CourseRow: View {
 }
 
 struct CourseRow_Previews: PreviewProvider {
-    static var course: CourseModel = CourseModel(courseName: "name", questions: [])
+    static var course: CourseModel = CourseModel(courseName: quiz.courses.first!.courseName, questions: [])
     static var previews: some View {
         CourseRow(course: course)
     }
