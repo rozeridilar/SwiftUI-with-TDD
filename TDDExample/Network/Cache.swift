@@ -7,9 +7,10 @@
 //
 //https://www.swiftbysundell.com/articles/caching-in-swift/
 import Foundation
-//The first thing we’ll do is to declare our new cache type. Let’s call it Cache, and make it a generic over any Hashable key type, and any value type. We’ll then give it an NSCache property, which will store Entry instances keyed by a WrappedKey type:
-
-//Here we are using QuizModel class to cache, hence we can cache it as infrequently as we can.
+/// The first thing we’ll do is to declare our new cache type.
+/// Let’s call it Cache, and make it a generic over any Hashable key type, and any value type.
+/// We’ll then give it an NSCache property, which will store Entry instances keyed by a WrappedKey type:
+/// Here we are using QuizModel class to cache, hence we can cache it as infrequently as we can.
 final class Cache<Key: Hashable, Value> {
     private let wrapped = NSCache<WrappedKey, Entry>()
 

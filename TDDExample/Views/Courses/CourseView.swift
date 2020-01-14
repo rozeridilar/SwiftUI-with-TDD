@@ -19,6 +19,15 @@ struct CourseView: View {
             LinearGradient(gradient: Gradient(colors: [topColor,centerColor, bottomColor]), startPoint: .topLeading, endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
             VStack{
+//                Image(course.courseName)
+//                    .clipShape(Circle())
+//                    .overlay(Circle().stroke(Color.white,lineWidth: 2))
+//                    .shadow(radius: 10)
+                
+                CircleImage(image: Image(course.courseName))
+                            .offset(x: 0, y: -130)
+                            .padding(.bottom, -130)
+                
                 ForEach(course.questions) { question in
                     VStack{
                         Text(question.question)
