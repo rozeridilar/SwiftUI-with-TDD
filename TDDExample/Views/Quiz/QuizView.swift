@@ -24,8 +24,10 @@ struct QuizView: View {
     }
 }
 
+#if DEBUG
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         QuizView()
     }
 }
+#endif

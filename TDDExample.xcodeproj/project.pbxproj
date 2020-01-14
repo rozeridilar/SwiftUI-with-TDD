@@ -144,7 +144,6 @@
 			children = (
 				785AB14923CDA75600975FDA /* Views */,
 				785AB14A23CDA76000975FDA /* Extensions */,
-				783EC31423C7588300176230 /* Model */,
 				785AB14823CDA71500975FDA /* Network */,
 				783EC2DE23C7494F00176230 /* AppDelegate.swift */,
 				783EC2E023C7494F00176230 /* SceneDelegate.swift */,
@@ -183,13 +182,6 @@
 				783EC30223C7495100176230 /* Info.plist */,
 			);
 			path = TDDExampleUITests;
-			sourceTree = "<group>";
-		};
-		783EC31423C7588300176230 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		785AB14823CDA71500975FDA /* Network */ = {

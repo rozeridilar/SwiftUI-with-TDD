@@ -49,10 +49,3 @@ class FileLoader {
     
 }
 
-
-
-//Design your code for testability:
-//Key factores in designing your code,
-//First, Unified input/Output.
-//Second, Always keep our state local.
-//Third and final important one: Dependency Injection.
